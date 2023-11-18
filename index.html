@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 65%;
+            width: 65%;
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .secondary {
+            height: 92%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .menu {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .send {
+            background-color: gray;
+            height: 75%;
+            width: 90%;
+
+        }
+
+        h1 {
+            font-size: 72px;
+            color: white;
+        }
+
+
+        .svg1 {
+            fill:#1eff00;
+            border: 2px solid #20a80e;
+            box-shadow: 0px 0px 1px 1px #20a80e;
+            border-radius: 50%;
+            margin: 5px;
+            margin-bottom: 10px;
+                      
+        }
+
+        .svg2 {
+            fill:#d9ff00;
+            border: 2px solid #a3a80e;
+            box-shadow: 0px 0px 1px 1px #85a745;
+            border-radius: 50%;
+            margin: 5px;
+            margin-bottom: 10px;
+                      
+        }
+
+        .svg3 {
+            fill:#e62300;
+            border: 2px solid #b33c0d;
+            box-shadow: 0px 0px 1px 1px rgb(168, 55, 14);
+            border-radius: 50%;
+            margin: 5px;
+            margin-bottom: 10px;
+                      
+        }
+
+        label {
+   cursor: pointer;
+   background-color: aquamarine;
+   color: white;
+   height: 70%;
+   width: 99.5%;
+   display: flex;
+   border: 2px dotted rgb(127, 129, 255);
+   justify-content: center;
+   align-items: center;
+   font-size: 36px;
+   /* Style as you please, it will become the visible UI component. */
+}
+
+.choose {
+    height: 15%;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.choose2 {
+    height: 15%;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#upload-photo {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+img {
+    height: 30px;
+}
+
+button {
+    margin: 10px;
+    background-color: aquamarine;
+    color: white;
+    border: none;
+    padding: 10px;
+   box-shadow: 1px 1px 5px 0px rgb(4, 94, 64);
+   width: 10%;
+}
+
+.plus {
+    height: 10px;
+}
+
+.envelope {
+    fill: aquamarine;
+    padding: 1px;
+}
+
+.padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 680px) {
+    .main {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    button {
+        height: 80%;
+        width: 80px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+}
+ 
+    </style>
+</head>
+<body>
+    <h1>File Upload Websites</h1>
+    <div class="main"> 
+        <div class="secondary">
+            <h2>Send Files To Acme Accounting</h2>
+           
+              <div class="send">
+                <div class="choose">
+                <button><img class="plus" src="./plus-16.png" alt="plus"> Files</button>
+            </div>
+                <label for="upload-photo"><img src="./9cz6B4KBi.png" alt="upload"> Files Here To Upload</label>
+                <input type="file" name="photo" id="upload-photo" /> 
+                <div class="choose2">
+                 <p class="padding">Powered By<svg class="envelope" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    <a href="https://fileinbox.com/">fileinbox.com</a></p>
+                    <p class="padding">1GB max/file</p>
+              </div>
+            </div>
+             
+            </div>
+          <div class="menu">
+            <svg class="svg1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+            <svg class="svg2" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>   
+            <svg class="svg3" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+          </div>
+       </div>
+
+    </div>
+</body>
+</html>
